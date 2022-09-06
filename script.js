@@ -2,14 +2,25 @@
 
 //--Task-1--//
 
-let numberOfFilms = prompt('Сколько фильмов вы уже посмотрели');
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели', '');
 
 //--Task-2--//
 
-let personalMovieDB = {
+const personalMovieDB = {
     count: numberOfFilms,
     movies: {},
     actors: {},
     genres: [],
     privat: false
 };
+
+//--Task-3--//
+
+const a = prompt('Один из последних просмотренных фильмов', ''),
+      b = prompt('На сколько оцените его', ''),
+      c = prompt('Один из последних просмотренных фильмов', ''),
+      d = prompt('На сколько оцените его', '');
+
+
+console.log(personalMovieDB);
+
